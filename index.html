@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -31,24 +30,28 @@
         }
         div.top-img li {
           display: inline;
+          border-right: solid thin;
+          color: #FFF;
         }
         div.top-img a {
           padding: 20px 10px;
           color: #FFF;
           text-decoration: none;
+          font-size: 13px;
         }
         div.top-img a:hover {
+          text-decoration: underline;
 
         }
         .sidebar-gradient {
-          background: rgba(248,80,50,1);
-          background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(50%, rgba(241,111,92,1)), color-stop(51%, rgba(246,41,12,1)), color-stop(71%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
-          background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-          background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-          background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-          background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+          background: rgba(173,0,40,1);
+          background: -moz-linear-gradient(top, rgba(173,0,40,1) 0%, rgba(143,0,33,1) 27%, rgba(107,0,25,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,0,40,1)), color-stop(27%, rgba(143,0,33,1)), color-stop(100%, rgba(107,0,25,1)));
+          background: -webkit-linear-gradient(top, rgba(173,0,40,1) 0%, rgba(143,0,33,1) 27%, rgba(107,0,25,1) 100%);
+          background: -o-linear-gradient(top, rgba(173,0,40,1) 0%, rgba(143,0,33,1) 27%, rgba(107,0,25,1) 100%);
+          background: -ms-linear-gradient(top, rgba(173,0,40,1) 0%, rgba(143,0,33,1) 27%, rgba(107,0,25,1) 100%);
+          background: linear-gradient(to bottom, rgba(173,0,40,1) 0%, rgba(143,0,33,1) 27%, rgba(107,0,25,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad0028', endColorstr='#6b0019', GradientType=0 );
         }
         header.main-header  {
           width: 100%;
@@ -76,61 +79,187 @@
         }
         div.top-nav li {
           display: inline;
+
         }
         div.top-nav a {
           color: #FFF;
           text-decoration: none;
           padding: 10px 20px;
+          font-size: 16px;
+        }
+        div.top-nav li:hover {
+          background-color: rgba(12, 12, 12, 0.75);
         }
         aside.main-sidebar {
           width: 30%;
           height: 60%;
           float: left;
-          background-color: darkred;
+          border-bottom-left-radius: 25px;
+          background-image: url('./img/aside-content-background.png');
         }
         aside.main-sidebar ul {
 
         }
         aside.main-sidebar li {
           list-style: none;
-          border: solid thin;
-          margin-bottom: 1px;
+          border: none;
+          margin-bottom: 2px;
         }
         aside.main-sidebar a {
           text-decoration: none;
           display: block;
           color: #FFF;
           padding: 5px 20px;
-
+          margin-left: 40px;
+          font-size: 18px;
+        }
+        section.sidebar-solo {
+          margin-top: 30px;
+          margin-left: 2px;
+        }
+        section.sidebar-solo a {
+          text-decoration: underline;
+        }
+        section.sidebar-solo a:hover {
+          text-decoration: none;
         }
         div.middle-content {
           width: 40%;
           height: 60%;
-          background-color: yellow;
           position: absolute;
           left: 30%;
+          background-image: url('./img/middle-content-background.png');
+          background-repeat: no-repeat;
         }
-
+        div.middle-content p {
+          margin: 10px 30px;
+          font-size: 15px;
+        }
+        div.middle-content h1 {
+          margin-left: 30px;
+          margin-top: 50px;
+          margin-bottom: 5px;
+          font-size: 25px;
+          color: #FFF;
+        }
+        div.middle-content ul {
+          margin-left: 30px;
+        }
+        div.middle-content li {
+          list-style: none;
+          margin-bottom: 15px;
+        }
+        div.middle-content a {
+          color: #FFF;
+          font-size: 15px;
+        }
+        div.middle-content a:hover {
+          text-decoration: none;
+        }
         section.right-content {
           height: 60%;
           width:30%;
           float: right;
-          background-color: pink;
+          border-bottom-right-radius: 25px;
+          background-image: url('./img/right-content-background.png');
         }
-        footer.main-footer {
-          height: 100px;
-          width: 100%;
-          background-color: black;
-        }
-        footer.main-footer h1 {
+        button.button-canvas {
+          width: 90%;
+          height: 25%;
+          background-color: transparent;
+          border: none;
+          margin-top: 12px;
+          margin-left: 12px;
+          font-size: 18px;
           color: #FFF;
         }
+        button.button-canvas:hover {
+          border: none;
+          background-color: rgba(12, 12, 12, 0.75);
+          cursor: pointer;
+        }
+        section.right-content h1 {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-size: 25px;
+          color: #FFF;
+        }
+        section.right-content ul {
+          margin-left: 30px;
+        }
+        section.right-content li {
+          list-style: none;
+          margin-bottom: 5px;
+        }
+        section.right-content a {
+          color: #FFF;
+          font-size: 15px;
+        }
+        section.right-content a:hover {
+          text-decoration: none;
+        }
 
+        footer.main-footer {
+          height: 180px;
+          width: 100%;
+          background-color: black;
+          position: relative;
+        }
+        div.social-links {
+          position: absolute;
+          left: 25%;
+          top: 30%;
+        }
+        div.social-links ul {
 
+        }
+        div.social-links li {
+          display: inline;
+          font-size: 10px;
+        }
+        div.social-links a {
+          text-decoration: none;
+          color: white;
+        }
+        .social {
+          width: 35px;
+          height: 35px;
+          margin-right: 10px;
+          border-radius: 7px;
+        }
+        .social:hover {
+          opacity: 0.5;
+        }
+        .youtube-img {
+          width: 100px;
+          height: 35px;
+          margin-right: 10px;
+          border-radius: 7px;
+        }
+        .youtube-img:hover {
+          opacity: 0.5;
+        }
+        div.footer-content-links {
+          position: absolute;
+          left: 15%;
+          top: 55%;
+        }
+        div.footer-content-links ul {
 
-
-
-
+        }
+        div.footer-content-links li {
+          display: inline;
+          border-right: solid thin #FFF;
+          padding-right: 5px;
+        }
+        div.footer-content-links a {
+          color: #FFF;
+          font-size: 12px;
+          text-decoration: none;
+        }
+        div.footer-content-links a:hover {
+          text-decoration: underline;
+        }
 
     </style>
 
@@ -175,21 +304,65 @@
               <li class="sidebar-gradient"><a href="#">Online Services</a></li>
               <li class="sidebar-gradient"><a href="#">Athletic</a></li>
               <li class="sidebar-gradient"><a href="#">My FCC</a></li>
+              <li class="sidebar-gradient"><a href="#">WebAdvisor</a></li>
             </ul>
-
+            <section class="sidebar-solo">
+              <a href="#">Annual Security Report</a>
+              <a href="#">Crime Alert</a>
+            </section>
           </aside>
 
           <div class="middle-content">
+            <p><a href="#">Email, WebAdvisor & Canvas login steps</a></p>
+            <p><a href="#">Questions about changes to DACA?</a></p>
+            <p><a href="#">Request a Transcript</a></p>
 
-
+            <h1>Calendar of Events</h1>
+            <ul>
+              <li><a href="#">FCC Women's Softball vs Merced College</a>3/2/2017 1:00 PM</li>
+              <li><a href="#">Volleyball Fridays</a></li>
+              <li><a href="#">Dr. Seuss's The Cat in the Hat</a></li>
+              <li><a href="#">This is our World:A Convert Celebrating World/Music</a></li>
+            </ul>
           </div>
           <section class="right-content">
-
+            <button class = "button-canvas" type="button" name="button">Canvas</button>
+            <ul>
+              <h1>In the News</h1>
+              <li><a href="#">Earn Money by Testing</a></li>
+              <li><a href="#">Art Space Gallery Features/a></li>
+              <li><a href="#">FCC Theatre presents Dr. Seuss</a></li>
+              <li><a href="#">FCC Collaborative Efforts</a></li>
+            </ul>
           </section>
         </div>
 
         <footer class="main-footer">
-          <h1>&copy Scott</h1>
+          <div class="social-links">
+            <ul>
+              <li><a href="#"><img class = "social" src="./img/camera.jpg" alt="Instagram"></a></li>
+              <li><a href="#"><img class = "social" src="./img/twitter.jpg" alt="Twitter"></a></li>
+              <li><a href="#"><img class = "social" src="./img/fb.jpg" alt="Facebook"></a></li>
+              <li><a href="#"><img class = "social" src="./img/gplus.jpg" alt="Google Plus"></a></li>
+              <li><a href="#"><img class = "youtube-img" src="./img/YT.jpg" alt="YouTube"></a></li>
+              <li><a href="#"><img class = "social" src="./img/snapchat.jpg" alt="Snapchat"></a></li>
+              <li><a href="#"><img class = "social" src="./img/flickr.png" alt="Flickr"></a></li>
+              <li><a href="#"><img class = "social" src="./img/ramimage.jpg" alt="Ram"></a></li>
+            </ul>
+          </div>
+          <div class="footer-content-links">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">For Students</a></li>
+              <li><a href="#">Courses & Programs</a></li>
+              <li><a href="#">Online Learning</a></li>
+              <li><a href="#">Faculty & Staff</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+
+          </div>
         </footer>
 
       </header>
